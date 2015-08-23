@@ -1,0 +1,55 @@
+﻿@using ZxdFramework.WebUI.Controllers.Models
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+@model LoginModel
+@{
+    
+    ViewBag.Title = "LogOn";
+    Layout = "~/Views/Shared/_ExtSupport.cshtml";
+}
+
+@section Head {
+
+    <link rel="Stylesheet" type="text/css" href="/Styles/lighttheme/Admin/main.css" />
+    <link rel="Stylesheet" type="text/css" href="/Styles/lighttheme/Admin/Login.css" />
+
+    <script type="text/javascript" src="/CusScripts/Admin/LoginPage.js"></script>
+    <script type="text/javascript" language="javascript">
+        var returnUri = @Html.GetObjectScript(ViewData["returnUri"]);
+
+        function DoSubmit() {
+            var param = {
+                UserName:document.getElementById("UserName").value,
+                Password:document.getElementById("UserPass").value
+            };
+
+            Ext.Ajax.request({
+               url: Ext.getUri('Account', 'LogOn'),
+               params:param,
+               success:function(response){
+                var re = Ext.decode(response.responseText);
+                if(re.success == 1) {
+                    window.location = returnUri;
+                }
+                if(re.success==2)
+                {
+                    Ext.Msg.alert("提示信息","");
+                }
+               }
+            });
+
+        }
+    </script>
+}
+<body>
+<div>
+    <img class="Login-Logo-Img" src="/Styles/lighttheme/Admin/loginlogo.png"/>
+    <div class="Login-banner-Img"><div>Office AnyWhere 2011</div></div>
+    <div class="Login-text-Img"></div>
+    <img class="Login-buttonenter-Img" onclick="DoSubmit();" src="/Styles/lighttheme/Admin/loginenter.png"/>
+    <img class="Login-buttonesc-Img" onclick="ClearText();" src="/Styles/lighttheme/Admin/loginesc.png"/>
+    <input type="text" name="UserName" id="UserName" class="Login-Text-NameInput"/>
+    <input type="password" name="UserPass" id="UserPass" class="Login-Text-PassInput"/>
+    <input type="text" name="Code" id="Code" class="Login-Text-CodeInput"/>
+</div>
+    </body>
+    </html>

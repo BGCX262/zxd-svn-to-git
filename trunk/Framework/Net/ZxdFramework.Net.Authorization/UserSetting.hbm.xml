@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ZxdFramework.Authorization"
+                   assembly="ZxdFramework.Net.Authorization">
+
+    <class name="UserSetting" table="ZxdSys.base.System_User_Setting" lazy="true">
+        <composite-id>
+            <key-property name="Key" column="P_Key" type="String" length="200" />
+            <key-property name="OwnerId" column="Owner_Id" type="Guid" />
+        </composite-id>
+
+        
+        <timestamp name="LastUpdate" column="Last_Update" />
+        <property name="Value" column="P_Value" type="StringClob" length="200000"/>
+    </class>
+
+    <database-object>
+        <create>
+            ALTER TABLE ZxdSys.base.System_User_Setting
+            ADD CONSTRAINT FK_base_System_User_Setting_OwnerId
+            FOREIGN KEY (Owner_Id)
+            REFERENCES ZxdSys.base.System_Users ( PID )
+            ON DELETE CASCADE
+        </create>
+        <drop>
+        </drop>
+    </database-object>
+
+</hibernate-mapping>

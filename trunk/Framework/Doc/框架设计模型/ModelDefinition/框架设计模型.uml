@@ -1,0 +1,1584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d78f9529-b711-4c10-bc9d-c3bdd0ddb3bd"
+  name="框架设计模型" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="fcf90661-a687-445c-838d-66cf255ee625"
+        name="前后台通信序列"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="8da733c9-ab76-4397-a830-870695a5c406"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="81ca9c43-1e76-42d1-a0ce-9048b951fbe3"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e0b862a8-baea-47d7-98ba-4d20cb3af0b0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6cdb0d29-6b66-4df4-969e-ee0757ab3b74"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6523aa86-798e-4fb6-835c-39c10f794a07"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="00e6b35f-a04e-4474-a69a-8ec03a064ff8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="89d62b78-c8aa-46af-b9b5-918ced02b6b1"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6cdb0d29-6b66-4df4-969e-ee0757ab3b74"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a13432b4-7f5d-423f-8336-16bf7d35ae01"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6523aa86-798e-4fb6-835c-39c10f794a07"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="faf338ca-767e-4761-9f45-b5c37f7b5b88"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f04ce002-19b8-4ca9-a83e-82b002daccdb"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="691393f2-26a1-4e40-8545-c3920c013177"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="72294efb-1b4e-4455-8831-9b4f0eac95f9"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a6b70625-5f5d-447a-8b18-d2cc4ac468cc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="15d07ba5-689d-4743-a8f4-976e610dacc1"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="691393f2-26a1-4e40-8545-c3920c013177"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="aebd7bec-0c78-4f7d-81fe-1145ef8d34a7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="72294efb-1b4e-4455-8831-9b4f0eac95f9"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="00e6b35f-a04e-4474-a69a-8ec03a064ff8"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="da655088-8eca-458b-a15a-7eb6d1f7b442"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="6cfcd3a0-8846-4b0b-a87b-04d0cff16542"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2dd1c5e7-7a09-4fe7-aa4a-34b7deac4d2e"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c3b01dd7-d685-4bff-8365-a3a12d18350e"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3ab6d020-cf8d-4598-ab20-8e96a219e4ab"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2f5f0ac9-a92f-4cb9-aff8-20a4b1161429"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2dd1c5e7-7a09-4fe7-aa4a-34b7deac4d2e"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b7c450bd-b7c8-4cf9-befe-d6373da34c04"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a6b70625-5f5d-447a-8b18-d2cc4ac468cc"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c3b01dd7-d685-4bff-8365-a3a12d18350e"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89d62b78-c8aa-46af-b9b5-918ced02b6b1"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="15d07ba5-689d-4743-a8f4-976e610dacc1"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f04ce002-19b8-4ca9-a83e-82b002daccdb"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d00059c9-eda2-45fc-8cc4-3fca65f5f987"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="88603c04-8344-4049-b31f-7ba5d9a6b1df"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e2db3f0c-6d92-47d7-84de-7c6db625bce1"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a4755723-d8b4-43ad-bc9f-5a20c1ad5b12"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="47c0d2bf-c141-418d-838a-036cf05967cb"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="23938074-c8a6-464b-b4a8-a70541f961c7"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1694403c-2a0b-46f6-bd5d-366fc13762d0"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e6e81347-7030-44f9-95db-bd684f4b91d6"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a4755723-d8b4-43ad-bc9f-5a20c1ad5b12"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b2f54740-5fae-4512-8c85-d97ee3e2ace6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="47c0d2bf-c141-418d-838a-036cf05967cb"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3ab6d020-cf8d-4598-ab20-8e96a219e4ab"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e0b862a8-baea-47d7-98ba-4d20cb3af0b0"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="de3539af-ac87-464f-aef4-5d29ee052127"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3a67514f-45d6-4884-a7de-d2b7aca3e072"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="fb0f204b-8c82-4b51-a8c7-2ab0d12f7eb2"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6661a5ca-2925-4590-9b06-4cc3d5df3fcc"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6cac8f0f-2330-49f3-ac54-63222e028b60"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="25af6f4e-6f59-4b6c-b647-ecabeaeaf039"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b5772a09-af24-46b3-a9ed-d07989b30d17"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f6bb7a7c-65eb-4113-8d39-89a1f99f8c35"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6661a5ca-2925-4590-9b06-4cc3d5df3fcc"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="845e31af-fc66-4a94-aad1-9126994cc156"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="23938074-c8a6-464b-b4a8-a70541f961c7"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6cac8f0f-2330-49f3-ac54-63222e028b60"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0e6e8464-dc6b-4d3c-a120-e134cce188d0"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+                LastKnownName="执行业务"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1483a164-db85-401a-baa8-0133184829db"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="96e821c1-8e6e-476d-b5df-c26628fa47bd"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="349efd96-bf0e-4e5e-81b2-364583662800"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7f9d01d6-3280-49ca-a746-c8e005534f91"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="96e821c1-8e6e-476d-b5df-c26628fa47bd"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="339b93a1-3780-4939-97bb-7790de0fa629"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+                LastKnownName="执行业务"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="349efd96-bf0e-4e5e-81b2-364583662800"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+                LastKnownName="执行业务"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="25af6f4e-6f59-4b6c-b647-ecabeaeaf039"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f9d01d6-3280-49ca-a746-c8e005534f91"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+                LastKnownName="执行业务"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b5772a09-af24-46b3-a9ed-d07989b30d17"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1483a164-db85-401a-baa8-0133184829db"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31424bd3-2acd-42c1-895c-053ac0f4fe21"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+                LastKnownName="执行业务"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1694403c-2a0b-46f6-bd5d-366fc13762d0"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f6bb7a7c-65eb-4113-8d39-89a1f99f8c35"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="fb0f204b-8c82-4b51-a8c7-2ab0d12f7eb2"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a07a5a5d-b64f-47b3-a712-0215983445b1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+                LastKnownName="扩展命令"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2f5f0ac9-a92f-4cb9-aff8-20a4b1161429"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e6e81347-7030-44f9-95db-bd684f4b91d6"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e2db3f0c-6d92-47d7-84de-7c6db625bce1"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c5c660d4-14d0-49b6-9a4c-56a878e33c58"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+                LastKnownName="权限判断"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="6cfcd3a0-8846-4b0b-a87b-04d0cff16542"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5190f4ee-38ef-4990-96da-8f46b21f1d3c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="49d6baa3-25a4-4909-9e11-add485ed58d9"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="32e6f655-3445-443c-9166-33acd20dbd2d"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d3143512-4ee9-4989-9df8-1497c0667a72"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4590e40f-384b-4414-babe-34c85e0d24b5"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6ad23c0b-70d3-44d9-a8d3-aa2f3e0f9f49"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cf0522d6-3558-4a8e-8699-fe52ebe85555"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d3143512-4ee9-4989-9df8-1497c0667a72"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ea483b74-0c65-4fec-b36f-697ddf25d9ff"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4590e40f-384b-4414-babe-34c85e0d24b5"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="37eccaeb-55d6-4d5d-ac8b-7b1d0d0864e8"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+                LastKnownName="接受模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c40df6a5-3517-4a5f-99ec-6b577ec2ae6d"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dca1b4f7-511c-4316-950e-1dbbd94bea35"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="框架设计模型.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="74ff9f69-5056-4724-8ab4-b26be2774b18"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="框架设计模型.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d78c41d1-720a-4cd6-b0fe-b15540cd727a"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1e2b0b86-7ba4-4b1d-add2-6491bdfa1354"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="框架设计模型.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="74ff9f69-5056-4724-8ab4-b26be2774b18"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="04392f97-0e29-401d-8bf8-2dfb3478c82b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d78c41d1-720a-4cd6-b0fe-b15540cd727a"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6ad23c0b-70d3-44d9-a8d3-aa2f3e0f9f49"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1e2b0b86-7ba4-4b1d-add2-6491bdfa1354"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cf0522d6-3558-4a8e-8699-fe52ebe85555"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dca1b4f7-511c-4316-950e-1dbbd94bea35"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d0652a43-8685-4775-b47b-22e66440ec06"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+                LastKnownName="业务模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="32e6f655-3445-443c-9166-33acd20dbd2d"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ddb97450-5f87-4194-b846-38df0854795a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="框架设计模型.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+                LastKnownName="通信模块"
+                LastKnownLocation="框架设计模型.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="47cff62e-4e93-4620-9b2c-b576a84a5c5b"
+            name="业务模块"
+            isActor="false"
+            lifelineDisplayName="‎业务模块‎">
+            <description>需要请求的业务模块</description>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8da733c9-ab76-4397-a830-870695a5c406"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6cdb0d29-6b66-4df4-969e-ee0757ab3b74"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e0b862a8-baea-47d7-98ba-4d20cb3af0b0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="74ff9f69-5056-4724-8ab4-b26be2774b18"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dca1b4f7-511c-4316-950e-1dbbd94bea35"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="6af0a22d-b7cc-470c-8be6-54038a0cf33d"
+            name="通信模块"
+            isActor="false"
+            lifelineDisplayName="‎通信模块‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="691393f2-26a1-4e40-8545-c3920c013177"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f04ce002-19b8-4ca9-a83e-82b002daccdb"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d3143512-4ee9-4989-9df8-1497c0667a72"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="32e6f655-3445-443c-9166-33acd20dbd2d"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="8ec4693a-0b93-4780-b6ee-c0b659c6f756"
+            name="接受模块"
+            isActor="false"
+            lifelineDisplayName="‎接受模块‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2dd1c5e7-7a09-4fe7-aa4a-34b7deac4d2e"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6cfcd3a0-8846-4b0b-a87b-04d0cff16542"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="框架设计模型.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="37eccaeb-55d6-4d5d-ac8b-7b1d0d0864e8"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0a912e4d-4dd1-4192-a922-db04bb853b78"
+            name="权限判断"
+            isActor="false"
+            lifelineDisplayName="‎权限判断‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a4755723-d8b4-43ad-bc9f-5a20c1ad5b12"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e2db3f0c-6d92-47d7-84de-7c6db625bce1"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0dfbf298-e572-4bca-a7e1-35f8704eff06"
+            name="扩展命令"
+            isActor="false"
+            lifelineDisplayName="‎扩展命令‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="6661a5ca-2925-4590-9b06-4cc3d5df3fcc"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="fb0f204b-8c82-4b51-a8c7-2ab0d12f7eb2"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c3941365-2198-481f-92e2-f0e01ddf5e47"
+            name="执行业务"
+            isActor="false"
+            lifelineDisplayName="‎执行业务‎">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="96e821c1-8e6e-476d-b5df-c26628fa47bd"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="框架设计模型.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1483a164-db85-401a-baa8-0133184829db"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="框架设计模型.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="2a7462fe-4ea6-4815-8f96-ec6b4d6e34cb"
+            name="发送请求事件"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8da733c9-ab76-4397-a830-870695a5c406"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6523aa86-798e-4fb6-835c-39c10f794a07"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9ff5b858-c5dc-4366-82fa-49a898988ba5"
+            name="接受请求"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="00e6b35f-a04e-4474-a69a-8ec03a064ff8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="72294efb-1b4e-4455-8831-9b4f0eac95f9"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="d34f6893-50dc-44ee-a5f0-c6942fffc742"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="15d07ba5-689d-4743-a8f4-976e610dacc1"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89d62b78-c8aa-46af-b9b5-918ced02b6b1"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8bab5995-0e5e-41fb-a21e-ffe9da5d67d1"
+            name="Message1"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a6b70625-5f5d-447a-8b18-d2cc4ac468cc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c3b01dd7-d685-4bff-8365-a3a12d18350e"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="937d760f-8704-4003-9425-310ddf9427bb"
+            name="Message2"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3ab6d020-cf8d-4598-ab20-8e96a219e4ab"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="47c0d2bf-c141-418d-838a-036cf05967cb"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="59750085-c892-4787-b3d6-5b8a473af1d8"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e6e81347-7030-44f9-95db-bd684f4b91d6"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2f5f0ac9-a92f-4cb9-aff8-20a4b1161429"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cdb68c3a-cb81-46ad-aee1-c6e710abd1ab"
+            name="Message3"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="23938074-c8a6-464b-b4a8-a70541f961c7"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6cac8f0f-2330-49f3-ac54-63222e028b60"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5372cc62-d0ee-4c98-9347-13ff2ee19366"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f6bb7a7c-65eb-4113-8d39-89a1f99f8c35"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1694403c-2a0b-46f6-bd5d-366fc13762d0"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="821931f0-6331-4dbb-b276-7a92670e7f43"
+            name="Message4"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="25af6f4e-6f59-4b6c-b647-ecabeaeaf039"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="349efd96-bf0e-4e5e-81b2-364583662800"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1ac73064-a431-4ea8-8e49-3c5d2d5d4334"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7f9d01d6-3280-49ca-a746-c8e005534f91"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b5772a09-af24-46b3-a9ed-d07989b30d17"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fd56e5ae-b00c-4b1a-b4d5-882aeefc13a4"
+            name="Message5"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="37eccaeb-55d6-4d5d-ac8b-7b1d0d0864e8"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4590e40f-384b-4414-babe-34c85e0d24b5"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9a5576b4-03b5-4637-9e4d-a2c24f27825c"
+            name="Message6"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6ad23c0b-70d3-44d9-a8d3-aa2f3e0f9f49"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d78c41d1-720a-4cd6-b0fe-b15540cd727a"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dc496533-53f5-4d9e-8bfe-82bdede05aff"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e2b0b86-7ba4-4b1d-add2-6491bdfa1354"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="框架设计模型.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cf0522d6-3558-4a8e-8699-fe52ebe85555"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="框架设计模型.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a13432b4-7f5d-423f-8336-16bf7d35ae01"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="de3539af-ac87-464f-aef4-5d29ee052127"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="aebd7bec-0c78-4f7d-81fe-1145ef8d34a7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d00059c9-eda2-45fc-8cc4-3fca65f5f987"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b7c450bd-b7c8-4cf9-befe-d6373da34c04"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5190f4ee-38ef-4990-96da-8f46b21f1d3c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b2f54740-5fae-4512-8c85-d97ee3e2ace6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c5c660d4-14d0-49b6-9a4c-56a878e33c58"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="845e31af-fc66-4a94-aad1-9126994cc156"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a07a5a5d-b64f-47b3-a712-0215983445b1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="339b93a1-3780-4939-97bb-7790de0fa629"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31424bd3-2acd-42c1-895c-053ac0f4fe21"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ea483b74-0c65-4fec-b36f-697ddf25d9ff"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ddb97450-5f87-4194-b846-38df0854795a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="04392f97-0e29-401d-8bf8-2dfb3478c82b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d0652a43-8685-4775-b47b-22e66440ec06"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c0466d0f-6794-45a2-91bd-6cdcd70e2d04"
+        name="脚本设计"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fc5e241a-d797-423f-a503-8629d7872a03"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7a243d18-2893-4e37-8dc2-e1f0b6d2ba2e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="536d5c6c-6402-4961-81fb-79739aec91d6"
+                  LastKnownName="检查权限"
+                  LastKnownLocation="框架设计模型.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="536d5c6c-6402-4961-81fb-79739aec91d6"
+            name="检查权限"
+            isLeaf="false">
+            <body>检查权限</body>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b83e2484-3e81-485e-b5da-e461c508e35f"
+        name="Script"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="84003af6-7a69-4150-a96a-128279523584"
+            isDerived="false"
+            sourceEndRoleName="Script"
+            targetEndRoleName="ScriptType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="72838ef2-9e38-48a3-945b-31e75b4b615c"
+              LastKnownName="ScriptType"
+              LastKnownLocation="框架设计模型.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca40eeb4-a749-4814-8907-5f245c267a39"
+                  name="Script"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e72a8bf9-5b96-4316-94f4-5108d5f21fd8"
+                  name="ScriptType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fae5633c-c907-4397-a512-2f5ff539120c"
+        name="ScriptManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="591b7c43-9640-4d39-80ca-2b84221ba6e1"
+            isDerived="false"
+            sourceEndRoleName="ScriptManager"
+            targetEndRoleName="Script"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b83e2484-3e81-485e-b5da-e461c508e35f"
+              LastKnownName="Script"
+              LastKnownLocation="框架设计模型.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7a5374f-de6b-4fd9-b362-d1ab72180644"
+                  name="ScriptManager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6687efb-3579-447e-b672-174f88cdaf18"
+                  name="Script"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c3952db8-702c-4233-b84e-8b8b0d86fdbd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="543ff21a-310f-42df-a7dc-0a313bcf266a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="74d064b4-53af-4a28-b329-e3bcc2bd701e"
+            name="Scripts"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="569bc4b7-b824-440c-9b00-edf0b4ac5060"
+                LastKnownName="HashSet&lt;Script&gt;"
+                LastKnownLocation="框架设计模型.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="63c8411d-5e56-4494-86d9-d24cc48d0e57"
+        name="Scripts" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="569bc4b7-b824-440c-9b00-edf0b4ac5060"
+        name="HashSet&lt;Script&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="72838ef2-9e38-48a3-945b-31e75b4b615c"
+        name="ScriptType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="40501a14-401b-49d6-82a3-2a96b8ef9668"
+            isDerived="false"
+            sourceEndRoleName="ScriptType"
+            targetEndRoleName="ScriptType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="72838ef2-9e38-48a3-945b-31e75b4b615c"
+              LastKnownName="ScriptType"
+              LastKnownLocation="框架设计模型.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e09a3e8a-4890-4f77-ba29-7c5c954e1b7b"
+                  name="ScriptType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd164512-7a2b-4e62-a605-612e237d82f0"
+                  name="ScriptType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2375664f-60b7-441b-9f0d-affcfc842a6b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="28470e0f-73d4-4aa0-99b2-cf6ade6adfee"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

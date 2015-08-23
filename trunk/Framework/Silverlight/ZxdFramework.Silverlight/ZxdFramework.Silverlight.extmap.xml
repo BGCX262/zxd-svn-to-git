@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>ZxdFramework.Silverlight</name>
+    <version>1.0.0.0</version>
+    <publickeytoken>861b97488044d91d</publickeytoken>
+    <relpath>ZxdFramework.Silverlight.dll</relpath>
+    <extension downloadUri="ZxdFramework.Silverlight.zip" />
+  </assembly>
+</manifest>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>OA系统登录页</title>
+    <link type="text/css" rel="Stylesheet" href="Scripts/resources/css/ext-all-notheme.css" />
+    <link type="text/css" rel="Stylesheet" href="Scripts/resources/css/ext-base.css" />
+    <link rel="stylesheet" type="text/css" href="Scripts/resources/css/xtheme-blue.css" />
+
+    <link rel="Stylesheet" type="text/css" href="Styles/lighttheme/Admin/main.css" />
+    <link rel="Stylesheet" type="text/css" href="Styles/lighttheme/Admin/Login.css" />
+
+    <script type="text/javascript" src="Scripts/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="Scripts/ext-all-debug.js"></script>
+    <script type="text/javascript" src="Scripts/ext-base.js"></script>
+    <script type="text/javascript">
+        Ext.BLANK_IMAGE_URL = 'Scripts/resources/images/default/s.gif';
+
+        Ext.getUri = function (controller, action) {
+            return Ext.RootPath + "/" + controller + ".page/" + action;
+        }
+    </script>
+
+    <script type="text/javascript" src="CusScripts/Admin/LoginPage.js"></script>
+</head>
+<body>
+<div>
+    <img class="Login-Logo-Img" src="/Styles/lighttheme/Admin/loginlogo.png"/>
+    <div class="Login-banner-Img"><div>Office AnyWhere 2011</div></div>
+    <div class="Login-text-Img"></div>
+    <img class="Login-buttonenter-Img" onclick="" src="/Styles/lighttheme/Admin/loginenter.png"/>
+    <img class="Login-buttonesc-Img" onclick="ClearText();" src="/Styles/lighttheme/Admin/loginesc.png"/>
+    <input type="text" name="UserName" id="UserName" class="Login-Text-NameInput"/>
+    <input type="password" name="UserPass" id="UserPass" class="Login-Text-PassInput"/>
+    <input type="text" name="Code" id="Code" class="Login-Text-CodeInput"/>
+</div>
+</body>
+</html>

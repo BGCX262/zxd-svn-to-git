@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="fec76f3f-61ef-4b25-96e9-de0ce0e35393" name="脚本设计类图" linkedPackageId="a484860b-f3a0-4a0b-9579-20a815d3fa4d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c2606786-7b2d-42b5-a620-4e6c80f884e3">
+      <profileInstance Id="c5295495-3c4a-4553-855d-097d2b4c5aa8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fa027c7a-8a5b-4fb5-8232-26e36151e886">
+      <profileInstance Id="113442a2-f60f-42bf-aec4-b56f4f91f19f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="53d2dd36-481a-47d3-81db-2275a7a5cb57" name="Script" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b83e2484-3e81-485e-b5da-e461c508e35f" />
+        <targetEnds>
+          <association Id="df6de5d1-1b13-4501-ac63-7d53a2106a70" isDerived="false" sourceEndRoleName="Script" targetEndRoleName="ScriptType" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5e3eb1d8-ec0d-4651-a6fe-35442c48ee21" LastKnownName="ScriptType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9ef9f2c-c51e-48ae-91e2-44c901d6e5f6" name="Script" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca40eeb4-a749-4814-8907-5f245c267a39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81c8ba5d-640d-4596-b3d5-5fa85d8f49ca" name="ScriptType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e72a8bf9-5b96-4316-94f4-5108d5f21fd8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="84003af6-7a69-4150-a96a-128279523584" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6db43556-bb2b-46ee-9350-450cfa61c9da" name="ScriptManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fae5633c-c907-4397-a512-2f5ff539120c" />
+        <targetEnds>
+          <association Id="cc70ce74-9961-4231-8bc9-ee503e83aef8" isDerived="false" sourceEndRoleName="ScriptManager" targetEndRoleName="Script" isLeaf="false" isAbstract="false">
+            <classMoniker Id="53d2dd36-481a-47d3-81db-2275a7a5cb57" LastKnownName="Script" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9df4b6f9-2853-4029-ac7f-811a4843cd85" name="ScriptManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7a5374f-de6b-4fd9-b362-d1ab72180644" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="671dc57b-d238-4268-b456-de8852d251d7" name="Script" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="18e28dd3-6cdb-4e24-b8cf-d53a0d197803" name="Lower" value="*">
+                      <elementDefinition Id="c3952db8-702c-4233-b84e-8b8b0d86fdbd" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e5ea73d7-0891-4be6-8870-e4336ea62abc" name="Upper" value="*">
+                      <elementDefinition Id="543ff21a-310f-42df-a7dc-0a313bcf266a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c6687efb-3579-447e-b672-174f88cdaf18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="591b7c43-9640-4d39-80ca-2b84221ba6e1" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="08a98eac-38d1-4123-9c8d-5611958a4d5d" name="Scripts" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74d064b4-53af-4a28-b329-e3bcc2bd701e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7affd71d-d17f-469b-8e0e-d264fbbdef2d" LastKnownName="HashSet&lt;Script&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="7affd71d-d17f-469b-8e0e-d264fbbdef2d" name="HashSet&lt;Script&gt;" isAbstract="false" isLeaf="false" cachedFullName="HashSet&lt;Script&gt;">
+        <elementDefinition Id="569bc4b7-b824-440c-9b00-edf0b4ac5060" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e3eb1d8-ec0d-4651-a6fe-35442c48ee21" name="ScriptType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72838ef2-9e38-48a3-945b-31e75b4b615c" />
+        <targetEnds>
+          <association Id="a107a282-2950-4557-a9aa-31160dc3d7b6" isDerived="false" sourceEndRoleName="ScriptType" targetEndRoleName="ScriptType" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5e3eb1d8-ec0d-4651-a6fe-35442c48ee21" LastKnownName="ScriptType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="465e9724-4518-4fcc-a50f-385f5c04bae4" name="ScriptType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e09a3e8a-4890-4f77-ba29-7c5c954e1b7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75e0c9a8-6bcf-41b1-935d-89a24cee10e1" name="ScriptType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="862889c3-6b1b-4565-829c-ffc5bf7d9d5e" name="Lower" value="*">
+                      <elementDefinition Id="2375664f-60b7-441b-9f0d-affcfc842a6b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a40b701a-f77d-46fe-b92e-2dc2ebd5716a" name="Upper" value="*">
+                      <elementDefinition Id="28470e0f-73d4-4aa0-99b2-cf6ade6adfee" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="dd164512-7a2b-4e62-a605-612e237d82f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40501a14-401b-49d6-82a3-2a96b8ef9668" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a484860b-f3a0-4a0b-9579-20a815d3fa4d" name="框架设计模型">
+    <elementDefinition Id="d78f9529-b711-4c10-bc9d-c3bdd0ddb3bd" />
+  </package>
+</logicalClassDesignerModel>

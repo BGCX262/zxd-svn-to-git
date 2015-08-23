@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.System"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="ModuleInfo" table="ZxdSys.base.System_moduleinfo">
+    <id name="Id" column="PID" type="Guid">
+      <generator class="guid" />
+    </id>
+    <property name="ModuleName" column="Module_Name" type="String" length="200" not-null="true" unique="true" unique-key="unique_module_name"/>
+    <property name="ModuleType" column="Module_Type" not-null="true"/>
+    <property name="Ref" column="File_Ref" type="String" length="200" not-null="true"/>
+    
+    <property name="Author" column="Author" type="String" length="50"/>
+    <property name="Description" column="Description" type="String" length="250"/>
+    <property name="Category" column="Category" type="String" length="50"/>
+
+    <property name="InitializationMode" />
+
+    <many-to-one name="ModuleFile" class="ModuleFile" foreign-key="FK_ModuleFile_Pid" >
+      <column name="ModuleFile_Pid"/>
+    </many-to-one>
+    
+    <set name="DependsOn" table="ZxdSys.base.system_moduleinfo_depends" cascade="all">
+      <key column="Module_Pid" foreign-key="FK_SystemModuleInfo_ModulePId"/>
+      <element column="Depend_Name" type="string" length="200" />
+    </set>
+  </class>
+  
+</hibernate-mapping>

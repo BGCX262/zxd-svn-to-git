@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32D3994E-F4ED-476D-9D2D-347F60454E57}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZxdFramework.Membership.UI</RootNamespace>
+    <AssemblyName>ZxdFramework.Silverlight.Membership.UI</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>zh-Hans</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ZxdFramework.Silverlight.Membership.UI.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ZxdFramework.Silverlight.Membership.UI.App</SilverlightAppEntry>
+    <TestPageFileName>ZxdFramework.Silverlight.Membership.UITestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>true</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Silverlight" />
+    <Reference Include="C1.Silverlight.DataGrid" />
+    <Reference Include="C1.Silverlight.DateTimeEditors" />
+    <Reference Include="C1.Silverlight.Extended" />
+    <Reference Include="C1.Silverlight.Imaging" />
+    <Reference Include="C1.Silverlight.Toolbar" />
+    <Reference Include="C1.Silverlight.Zip" />
+    <Reference Include="Microsoft.Expression.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Effects">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\..\Libs\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.MefExtensions">
+      <HintPath>..\..\Libs\Microsoft.Practices.Prism.MefExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.Composition, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
+      <DependentUpon>SampleDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditRoleView.xaml.cs">
+      <DependentUpon>EditRoleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditRoleViewModel.cs" />
+    <Compile Include="Views\EditUserView.xaml.cs">
+      <DependentUpon>EditUserView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoleView.xaml.cs">
+      <DependentUpon>RoleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoleViewModel.cs" />
+    <Compile Include="Views\UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Properties\DesignTimeResources.xaml" Condition="'$(DesignTime)'=='true' OR ('$(SolutionPath)'!='' AND Exists('$(SolutionPath)') AND '$(BuildingInsideVisualStudio)'!='true' AND '$(BuildingInsideExpressionBlend)'!='true')">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDesignTimeResources>true</ContainsDesignTimeResources>
+    </Page>
+    <Page Include="SampleData\SampleDataSource\SampleDataSource.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EditRoleView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EditUserView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LoginView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RoleView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <DesignTimeOnly Include="SampleData\SampleDataSource\SampleDataSource.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZxdFramework.Silverlight.Controls\ZxdFramework.Silverlight.Controls.csproj">
+      <Project>{6D16BF3D-4E84-4D75-9B1A-A7E042AFBB04}</Project>
+      <Name>ZxdFramework.Silverlight.Controls</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZxdFramework.Silverlight.DataContract\ZxdFramework.Silverlight.DataContract.csproj">
+      <Project>{29A292CE-A0BE-4734-9ABD-B878507FBABC}</Project>
+      <Name>ZxdFramework.Silverlight.DataContract</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ZxdFramework.Silverlight\ZxdFramework.Silverlight.csproj">
+      <Project>{6D81D717-1714-4478-941B-9884C57335A4}</Project>
+      <Name>ZxdFramework.Silverlight</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectResources\ProjectResources.csproj">
+      <Project>{3277D3CB-BF8A-4068-AD30-596BF2446FBB}</Project>
+      <Name>ProjectResources</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\accessories.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-accessories-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-accessories-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-accessories-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-accessories-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-6.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-translation.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-development-web.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-education-language.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-education-mathematics.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-education.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-engineering-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-engineering-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-games-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-games-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-games-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-games-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-graphics-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-graphics-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-graphics-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-graphics-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-internet-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-internet-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-internet-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-internet-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-multimedia-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-multimedia-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-multimedia-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-multimedia-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-multimedia-6.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-office-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-office-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-office-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-office-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-office-6.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-other-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-other-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-other-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-science-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-science-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-system-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-system-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-system-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-system-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-system-6.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-toys.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-utilities-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-utilities-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\applications-utilities-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-5.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-peripherals-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-peripherals-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-peripherals-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-personal-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-desktop-personal-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-other-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-other-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-system-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-system-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-system-4.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-system-network-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences-system-network-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\preferences.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\system-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\system-help-2.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\system-help-3.png" />
+    <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\system-settings-2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

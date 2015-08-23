@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZxdFramework.Service.SentRequestEvent">
+    <Position X="7" Y="9.5" Width="2.25" />
+    <Members>
+      <Property Name="Request" Hidden="true" />
+      <Property Name="Response" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABAAAAAAEABAAQAAAACgAAACAAAAAAAAAA=</HashCode>
+      <FileName>Service\SentRequestEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Request" />
+      <Property Name="Response" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZxdFramework.Service.RequestServiceProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="11" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAAAAAggAAAAAAAAAAAAAAIAQEAAAA=</HashCode>
+      <FileName>Service\RequestServiceProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ZxdFramework.Service.JsonRequest" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAIAAAAFABAABAgAAAAAgAAAAAABEAIQCQA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\JsonRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ZxdFramework.Service.JsonResponse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAFABAABAAAABAAAAAAAAABEAIQAgA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\JsonResponse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ZxdFramework.Service.IJsonRequest">
+    <Position X="8" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAABABAABAgAAAAAAAAAAAABEAAQCAA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\IJsonRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="ZxdFramework.Service.IRequestServiceProvider">
+    <Position X="0.75" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAgAAAAAAAAAAAAAAAIAAEAAAA=</HashCode>
+      <FileName>Service\RequestServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ZxdFramework.Service.IJsonResponse">
+    <Position X="8" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABABAABAAAABAAAAAAAAABEAAQAAA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\IJsonResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ResultType" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="ZxdFramework.Service.ISentRequestEvent">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="Response" Type="ZxdFramework.Service.IJsonResponse" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="2.752" />
+        <Point X="6.875" Y="2.752" />
+        <Point X="6.875" Y="5.125" />
+        <Point X="8" Y="5.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABAAAAAAEABAAAAAAACgAAACAAAAAAAAAA=</HashCode>
+      <FileName>Service\SentRequestEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Request" />
+      <Property Name="Response" />
+    </ShowAsAssociation>
+  </Interface>
+  <Enum Name="ZxdFramework.Service.RequestCategory" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAIAAAAAAEAABAAAAAAAQAAAAA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\IJsonRequest.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ZxdFramework.Service.ResultType" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAgAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\Projects\SilverlightProject_2.0\Framework\Net\ZxdFramework.Net\Service\IJsonResponse.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="ZxdFramework.Service.ServiceCompleted&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Service\SentRequestEvent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

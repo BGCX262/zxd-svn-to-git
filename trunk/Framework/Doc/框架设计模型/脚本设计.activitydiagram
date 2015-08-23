@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="66f66cfe-8f49-40f7-84ae-c5d3f9d72493" name="脚本设计" linkedPackageId="8dafed70-088e-4862-9372-a4a958e309fd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ae833ca3-d93c-42d1-b06e-2e6eee40b374">
+      <profileInstance Id="fc679e27-cea0-4816-a0a1-10e90c810316" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a368d889-bc4c-4b30-b3fa-890a8775676d">
+      <profileInstance Id="23a2fbb4-9e38-4199-a251-d4af8e7fae62" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="ce25bbea-a8f1-4b2d-86e3-080ce064e510" name="脚本设计" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c0466d0f-6794-45a2-91bd-6cdcd70e2d04" />
+        <nodes>
+          <initialNode Id="f2c9c2b0-040b-4be5-b5f5-de7f2efa0e37" name="Initial1" isLeaf="false">
+            <elementDefinition Id="fc5e241a-d797-423f-a503-8629d7872a03" />
+            <flowNodeTargets>
+              <controlFlow Id="bf96305e-08bf-4a5f-99d2-0544fc6f706e" isLeaf="false">
+                <opaqueActionMoniker Id="130cd94b-a1be-42cd-8ec3-6ab3d6e95351" LastKnownName="检查权限" />
+                <elementDefinition Id="7a243d18-2893-4e37-8dc2-e1f0b6d2ba2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="130cd94b-a1be-42cd-8ec3-6ab3d6e95351" name="检查权限" isLeaf="false">
+            <elementDefinition Id="536d5c6c-6402-4961-81fb-79739aec91d6" />
+            <body>检查权限</body>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="8dafed70-088e-4862-9372-a4a958e309fd" name="框架设计模型">
+    <elementDefinition Id="d78f9529-b711-4c10-bc9d-c3bdd0ddb3bd" />
+  </package>
+</activityRootModel>

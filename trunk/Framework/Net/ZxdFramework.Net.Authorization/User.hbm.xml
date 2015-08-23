@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="ZxdFramework.Authorization"
+                   assembly="ZxdFramework.Net.Authorization">
+    <class name="User" table="ZxdSys.base.System_Users">
+        <id name="Id" type="Guid" column="PID">
+            <generator class="guid" />
+        </id>
+
+        <property name="Name" column="Show_Name" type="String" length="20" />
+        <property name="LoginName" column="User_Name" type="String" length="20" unique="true" not-null="true"/>
+        <property name="Password" column="Password" type="String" length="20" />
+        <property name="State" column="State_Type" />
+        <property name="TokenId" column="Token_Id" type="String" length="100"/>
+        <property name="LoginTime" column="Login_Time" type="DateTime" />
+        <property name="LastIp" column="Last_Ip" type="String" length="20"/>
+        <property name="Count" column="Login_Count" type="int"/>
+
+        <array name="RoleNames" table="ZxdSys.base.System_User_Roles" cascade="save-update">
+            <key column="User_Pid" not-null="true" foreign-key="FK_System_User_Roles_UserId"/>
+            <index column="Index_I" />
+            <element column="Role_Name" type="String" length="50" />
+        </array>
+
+    </class>
+
+    <database-object>
+        <create>
+            ALTER TABLE ZxdSys.base.System_User_Roles
+            DROP CONSTRAINT FK_System_User_Roles_UserId
+            go
+            alter table ZxdSys.base.System_User_Roles
+            add constraint FK_System_User_Roles_UserId
+            foreign key (User_Pid)
+            references ZxdSys.base.System_Users(PID)
+            on delete cascade
+        </create>
+        <drop></drop>
+    </database-object>
+
+</hibernate-mapping>

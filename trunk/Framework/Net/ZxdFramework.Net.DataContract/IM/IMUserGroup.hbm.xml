@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.IM"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="IMUserGroup" table="ZxdSys.base.IM_UserGroup">
+    <id name="Id" column="PID" type="Guid">
+      <generator class="guid" />
+    </id>
+
+    <timestamp name="UpdateTime" column="Last_Update"/>
+    <property name="Name" column="Group_Name" type="String" length="50" unique-key="UK_UserGroup_Name"/>
+    <many-to-one name="Owner" class="IMUser" column="User_Id" unique-key="UK_UserGroup_Name"/>  
+    <property name="Icon" column="Icon" type="string" length="200" />
+    <property name="Type" column="Group_Type"/>
+
+    <list name="Members" inverse="false" cascade="save-update">
+        <key column="Owner_Id" />
+        <!--<index column="Order_Index" />-->
+        <list-index column="Order_Index"/>
+        <one-to-many class="IMUserSetting" />
+    </list>
+  </class>
+
+</hibernate-mapping>

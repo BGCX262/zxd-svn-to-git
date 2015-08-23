@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.Page"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="RazorView" table="ZxdSys.base.System_RazorViews">
+    <id name="Id" column="PID" type="Guid">
+      <generator class="guid" />
+    </id>
+    <timestamp name="UpdateTime" column="Last_Update"/>
+
+    <property name="Name" column="View_Name" type="string" length="200" not-null="true" />
+    <property name="ControllerName" column="Controller_Name" type="string" length="250" not-null="true" unique-key="IK_View_ControllerName"/>
+    <property name="Category" column="Category" not-null="true" unique="true"/>
+    <property name="Description" type="string" length="500"/>
+    <property name="Content" column="Page_Content" type="StringClob"/>
+    <property name="UpdateUser" column="Update_User" />
+  </class>
+
+</hibernate-mapping>

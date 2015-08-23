@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.IM"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="IMUser" table="ZxdSys.base.IM_User">
+    <id name="Id" column="PID" type="Guid">
+    </id>
+    <property name="TcpAddress" column="TCP_IP" type="String" length="20" />
+    <list name="Groups" inverse="false" cascade="save-update">
+        <key column="User_Id" not-null="true"/>
+        <!--<index column="Order_Index" type="int"/>-->
+        <list-index column="Order_Index" />
+        <one-to-many class="IMUserGroup"/>
+    </list>
+  </class>
+
+</hibernate-mapping>

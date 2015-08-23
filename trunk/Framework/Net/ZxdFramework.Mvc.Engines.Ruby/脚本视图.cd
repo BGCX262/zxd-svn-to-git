@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZxdFramework.Mvc.Engines.Ruby.RubyViewEngine">
+    <Position X="0.5" Y="2.75" Width="2.25" />
+    <Members>
+      <Method Name="CreatePartialView" Hidden="true" />
+      <Method Name="CreateView" Hidden="true" />
+      <Method Name="FileExists" Hidden="true" />
+      <Method Name="GetContents" Hidden="true" />
+      <Method Name="GetRubyMasterView" Hidden="true" />
+      <Method Name="GetView" Hidden="true" />
+      <Property Name="RubyViewSource" Hidden="true" />
+      <Property Name="ScriptRuntime" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAAABAAAAAAAQABAEAAAAAAAAAAAAAAAABEAAAEAA=</HashCode>
+      <FileName>RubyViewEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZxdFramework.Mvc.Engines.Ruby.RubyView">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="ZxdFramework.Mvc.Engines.Ruby.RubyView.Container" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>RubyView.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="MasterView" Type="ZxdFramework.Mvc.Engines.Ruby.RubyView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="1.938" />
+        <Point X="4.625" Y="1.938" />
+        <Point X="4.625" Y="3.759" />
+        <Point X="5.978" Y="3.759" />
+        <Point X="5.978" Y="3.384" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAASAAAAAAAAAAAAAAAAAIBAAAABAAAA=</HashCode>
+      <FileName>RubyView.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Template" />
+      <Property Name="MasterView" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ZxdFramework.Mvc.Engines.Ruby.RubyTemplate">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAJQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RubyTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZxdFramework.Mvc.Engines.Ruby.RubyScriptBlock">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>RubyScriptBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

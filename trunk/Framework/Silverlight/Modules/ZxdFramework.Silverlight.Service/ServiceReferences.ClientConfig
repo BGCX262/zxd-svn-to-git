@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="NetTcpBinding_IIMService">
+                    <binaryMessageEncoding />
+                    <tcpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="net.tcp://xudong-pc:4502/ZxdFramework.WebUI/Services/IMService.svc"
+                binding="customBinding" bindingConfiguration="NetTcpBinding_IIMService"
+                contract="IM.IIMService" name="NetTcpBinding_IIMService" />
+        </client>
+    </system.serviceModel>
+</configuration>

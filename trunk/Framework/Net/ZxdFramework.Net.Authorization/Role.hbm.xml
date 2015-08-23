@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.Authorization"
+                   assembly="ZxdFramework.Net.Authorization">
+    <class name="Role" table="ZxdSys.base.System_Roles" lazy="false">
+        <id name="Id" type="Guid" column="PID">
+            <generator class="guid" />
+        </id>
+        <timestamp name="LastUpdate" column="Last_Update" />
+        <property name="Name" column="Show_Name" type="String" length="20" unique="true" unique-key="FK_System_Roles_Name"/>
+        <property name="Description" column="Description" type="String" length="500" />
+        <property name="AuthorityScript" column="Authority_Script" type="String" length="2000" />
+        <many-to-one name="Parent" class="Role" column="Parent_Pid" />
+
+        <set name="Children" cascade="all">
+            <key column="Parent_Pid" />
+            <one-to-many class="Role"/>
+        </set>
+
+        <set name="ActionKeys" table="ZxdSys.base.System_Role_Actions" cascade="all">
+            <key column="Role_Pid" />
+            <element column="Action_Key" type="String" length="200" not-null="true"/>
+        </set>
+        
+    </class>
+</hibernate-mapping>

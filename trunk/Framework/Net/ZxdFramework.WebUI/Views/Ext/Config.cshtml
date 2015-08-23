@@ -1,0 +1,13 @@
+﻿@model ZxdFramework.WebUI.Controllers.Models.ExtScriptConfig
+@{
+    Layout = null;
+}
+
+Ext.RootPath = @Html.GetObjectScript(Model.RootPath);
+Ext.BLANK_IMAGE_URL = Ext.RootPath + '/Scripts/resources/images/default/s.gif';
+
+Ext.getUri = function(controller, action){
+    return  Ext.RootPath + "/" + controller + ".page/" + action;
+}
+
+_tempUser = @Html.GetObjectScript(Model.CurrentUser);

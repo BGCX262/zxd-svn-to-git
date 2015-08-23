@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ZxdFramework.WebUI.Services.ConnService" CodeBehind="ConnService.svc.cs" %>

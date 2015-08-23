@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IMService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IIMService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/ZxdFramework.WebUI/Services/IMService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/ZxdFramework.WebUI/Services/IMService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/ZxdFramework.WebUI/Services/IMService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ZxdFramework.DataContract.IM" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIMService_Join_InputMessage">
+    <wsdl:part name="parameters" element="tns:Join" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_Join_OutputMessage">
+    <wsdl:part name="parameters" element="tns:JoinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_OffLine_InputMessage">
+    <wsdl:part name="parameters" element="tns:OffLine" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_OffLine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OffLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_SentMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SentMessage" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_SentMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SentMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_SentCommand_InputMessage">
+    <wsdl:part name="parameters" element="tns:SentCommand" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_SentCommand_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SentCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_ChangeSetting_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeSetting" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_ChangeSetting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangeSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_ReceiveMessage_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReceiveMessage" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_ReceiveCommand_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReceiveCommand" />
+  </wsdl:message>
+  <wsdl:message name="IIMService_UserChanged_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:UserChanged" />
+  </wsdl:message>
+  <wsdl:portType name="IIMService">
+    <wsdl:operation name="Join">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIMService/Join" message="tns:IIMService_Join_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/JoinResponse" message="tns:IIMService_Join_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OffLine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIMService/OffLine" message="tns:IIMService_OffLine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/OffLineResponse" message="tns:IIMService_OffLine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SentMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIMService/SentMessage" message="tns:IIMService_SentMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/SentMessageResponse" message="tns:IIMService_SentMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SentCommand">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIMService/SentCommand" message="tns:IIMService_SentCommand_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/SentCommandResponse" message="tns:IIMService_SentCommand_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSetting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIMService/ChangeSetting" message="tns:IIMService_ChangeSetting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/ChangeSettingResponse" message="tns:IIMService_ChangeSetting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMessage">
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/ReceiveMessage" message="tns:IIMService_ReceiveMessage_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveCommand">
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/ReceiveCommand" message="tns:IIMService_ReceiveCommand_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserChanged">
+      <wsdl:output wsaw:Action="http://tempuri.org/IIMService/UserChanged" message="tns:IIMService_UserChanged_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IIMService" type="tns:IIMService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IIMService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Join">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/Join" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OffLine">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/OffLine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SentMessage">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/SentMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SentCommand">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/SentCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSetting">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/ChangeSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveMessage">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/ReceiveMessage" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReceiveCommand">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/ReceiveCommand" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserChanged">
+      <soap12:operation soapAction="http://tempuri.org/IIMService/UserChanged" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IMService">
+    <wsdl:port name="NetTcpBinding_IIMService" binding="tns:NetTcpBinding_IIMService">
+      <soap12:address location="net.tcp://xudong-pc:4502/ZxdFramework.WebUI/Services/IMService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://xudong-pc:4502/ZxdFramework.WebUI/Services/IMService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

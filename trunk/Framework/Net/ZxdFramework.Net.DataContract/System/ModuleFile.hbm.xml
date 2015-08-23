@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.System"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="ModuleFile" table="ZxdSys.base.System_modulefile">
+    <id name="Id" column="PID" type="Guid">
+      <generator class="guid" />
+    </id>
+    <timestamp name="UploadTime" column="Last_Update"/>
+    
+    <property name="FileName" column="File_Name" type="string" length="200" not-null="true" />
+    <property name="UploadUser" column="Upload_User" type="string" length="50" />
+    
+    <set name="ModuleList" cascade="all" inverse="true">
+      <key column="ModuleFile_Pid" foreign-key="FK_ModuleFile_Pid" on-delete="cascade"/>
+      <one-to-many class="ModuleInfo"/>
+    </set>
+  </class>
+
+</hibernate-mapping>

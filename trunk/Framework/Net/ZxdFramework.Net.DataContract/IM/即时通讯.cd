@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ZxdFramework.DataContract.IM.IMCommand">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAgAAA=</HashCode>
+      <FileName>IM\IMCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZxdFramework.DataContract.IM.IMUser">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>IM\IMUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Groups" />
+      <Property Name="Teams" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ZxdFramework.DataContract.IM.IMUserGroup">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>IM\IMUserGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ZxdFramework.DataContract.IM.IMUserSetting">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAABAAAAAAQAAAAAAAAAAgAABAAAAAA=</HashCode>
+      <FileName>IM\IMUserSetting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZxdFramework.DataContract.IM.IMUserTeams">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>IM\IMUserTeams.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ZxdFramework.DataContract.IM.Message" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAAAAAAAAAAAAAAAAAIABAAAQAAAAAgAAA=</HashCode>
+      <FileName>IM\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ZxdFramework.DataContract.IM.CommandTypes" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAAAA=</HashCode>
+      <FileName>IM\CommandTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ZxdFramework.DataContract.IM.States" Collapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAIAAAAAAAAAAABABAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>IM\States.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

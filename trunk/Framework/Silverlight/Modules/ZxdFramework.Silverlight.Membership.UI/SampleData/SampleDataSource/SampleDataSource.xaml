@@ -1,0 +1,19 @@
+﻿<!--
+      *********    请勿修改此文件     *********
+      此文件由设计工具再生成。更改
+      此文件可能会导致错误。
+-->
+<SampleData:SampleDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:SampleDataSource.Collection>
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-accessories-2.png" Property2="True" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-accessories-3.png" Property2="False" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-accessories-4.png" Property2="True" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-accessories-5.png" Property2="False" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-2.png" Property2="True" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-3.png" Property2="False" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-4.png" Property2="True" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-5.png" Property2="False" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-6.png" Property2="True" />
+    <SampleData:Item Image="/ZxdFramework.Silverlight.Membership.UI;component/SampleData/SampleDataSource/SampleDataSource_Files/applications-development-translation.png" Property2="False" />
+  </SampleData:SampleDataSource.Collection>
+</SampleData:SampleDataSource>

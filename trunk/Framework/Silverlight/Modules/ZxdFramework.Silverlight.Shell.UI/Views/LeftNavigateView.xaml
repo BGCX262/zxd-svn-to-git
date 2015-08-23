@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    xmlns:regions="http://www.codeplex.com/prism"
+	mc:Ignorable="d"
+	x:Class="ZxdFramework.Shell.UI.Views.LeftNavigateView"
+	d:DesignWidth="302" d:DesignHeight="469">
+
+	<Grid x:Name="LayoutRoot">
+		<toolkit:Accordion HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch">
+			<toolkit:AccordionItem Header="即时通讯">
+                <ContentControl regions:RegionManager.RegionName="testregionname" />
+            </toolkit:AccordionItem>
+            <toolkit:AccordionItem Header="工程图表">
+                <ContentControl regions:RegionManager.RegionName="testaregionname"/>
+            </toolkit:AccordionItem>
+        </toolkit:Accordion>
+	</Grid>
+</UserControl>

@@ -1,0 +1,20 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:c1="http://schemas.componentone.com/winfx/2006/xaml" x:Class="ZxdFramework.Shell.UI.Views.LogoControl"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot">
+    	<Canvas Margin="0">
+    		<Canvas.Effect>
+    			<DropShadowEffect/>
+    		</Canvas.Effect>
+    		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Lemsun" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" FontStyle="Italic" FontFamily="Arial Black" RenderTransformOrigin="-0.01,-0.029" Foreground="#FF025A10"/>
+    		<TextBlock TextWrapping="Wrap" Text="@" FontSize="20" Canvas.Left="209" Foreground="#FF040689"/>
+    		<TextBlock TextWrapping="Wrap" Text="林木森智能办公系统" FontFamily="Microsoft YaHei" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" Canvas.Left="85" Canvas.Top="58"/>
+    	</Canvas>
+    </Grid>
+</UserControl>

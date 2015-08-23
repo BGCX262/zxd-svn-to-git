@@ -1,0 +1,65 @@
+﻿/* ----------登录页样式开始---------- */
+.Login-Logo-Img{
+    position:absolute;
+    left:340px;
+    top:150px;
+}
+.Login-banner-Img{
+    position:absolute;
+    left:0px;
+    background-image:url(loginbanner.jpg) !important;
+    top:400px;
+    height:61px;
+    width:100%;
+}
+.Login-banner-Img div{
+    padding-left:300px;
+    padding-top:17px;
+    font-weight:bold;
+    font-size:x-large;
+    color:White;
+}
+.Login-text-Img{
+    position:absolute;
+    left:600px;
+    top:300px;
+    width:446px;
+    height:297px;
+    background-image:url(logintext.png) !important;
+}
+
+.Login-buttonenter-Img{
+    position:absolute;
+    left:630px;
+    top:450px;
+    cursor:hand;
+}
+
+.Login-buttonesc-Img{
+    position:absolute;
+    left:730px;
+    top:450px;
+    cursor:hand;
+}
+.Login-Text-NameInput{
+    position:absolute;
+    border:0px;
+    width:100px;
+    left:726px;
+    top:340px;
+}
+.Login-Text-PassInput{
+    position:absolute;
+    border:0px;
+    width:100px;
+    left:726px;
+    top:380px;
+}
+.Login-Text-CodeInput{
+    position:absolute;
+    border:0px;
+    width:100px;
+    left:726px;
+    top:420px;
+}
+/* ----------登录页样式结束---------- */

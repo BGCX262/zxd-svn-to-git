@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="5fe3399a-1566-4444-961f-b0b155c77a3d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="6d841313-722c-4fc3-8067-a8b5c23ed7a8" name="后台系统">
+      <childLayers>
+        <layer Id="7237addf-d8af-4e98-964f-53a931009646" name="HTTP Json 通信" />
+        <layer Id="ae90646a-9be2-4fd8-9752-dcfd7e30f3d4" name="解析执行" />
+        <layer Id="4d1cff5b-05b9-40bc-a198-f333f3e449b9" name="逻辑业务" />
+      </childLayers>
+    </layer>
+    <layer Id="438f6e94-d5bb-4a5d-8ae6-6290484f7838" name="前台系统">
+      <childLayers>
+        <layer Id="6221d1b1-eece-4371-9779-4c7d743ae6ff" name="HTTP Json 通信" />
+        <layer Id="713a9d3e-ee7d-4846-af5f-ec3db887c098" name="模块加载" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

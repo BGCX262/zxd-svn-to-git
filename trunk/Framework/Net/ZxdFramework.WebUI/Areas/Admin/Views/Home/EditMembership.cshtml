@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "EditMembership";
+    Layout = "~/Areas/Admin/Views/Shared/WindowMaster.cshtml";
+}
+
+@section script{
+    var @ViewData["var"] = new Ext.TabPanel({
+           activeTab: 0,
+            items: [{
+                title: '用户管理',
+                tbar:[{
+                    text:'增加用户',
+                    handler:function(){
+                        
+                    }
+                }, '-', {
+                    text:'修改信息'
+                }, '->', {
+                    text:'删除用户'
+                }]
+            },{
+                title: '角色管理',
+                tbar:[{
+                    text:'增加角色'
+                }, '->', {
+                    text:'删除角色'
+                }]
+            }]
+    });
+}
+
+

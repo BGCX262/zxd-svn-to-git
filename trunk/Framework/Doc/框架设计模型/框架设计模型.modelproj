@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a8b3664f-d473-4469-a9f4-1b23eaaaaa21}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>框架设计模型</Name>
+    <RootNamespace>框架设计模型</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="前后台通信序列.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="前后台通信序列.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>前后台通信序列.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="服务体系.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="服务体系.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>服务体系.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="脚本设计.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="脚本设计.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>脚本设计.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="脚本设计类图.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="脚本设计类图.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>脚本设计类图.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\框架设计模型.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Net\ZxdFramework.Mvc\ZxdFramework.Mvc.csproj">
+      <Name>ZxdFramework.Mvc</Name>
+      <Project>{1aa51dd1-0f87-426a-845e-41dc06a2b04f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\ZxdFramework.Net.Script\ZxdFramework.Net.Script.csproj">
+      <Name>ZxdFramework.Net.Script</Name>
+      <Project>{d28f0fe8-1a49-488e-9bd1-d259bdad2327}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Net\ZxdFramework.Net\ZxdFramework.Net.csproj">
+      <Name>ZxdFramework.Net</Name>
+      <Project>{9a7a52c4-8061-4746-bf12-e7234923bb5f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="框架层次.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="框架层次.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>框架层次.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="框架层次.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>框架层次.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,60 @@
+﻿@using ZxdFramework.WebUI.Controllers.Models
+@model LoginModel
+@{
+    
+    ViewBag.Title = "LogOn";
+    Layout = "~/Views/Shared/_ExtSupport.cshtml";
+}
+
+@section Head {
+    <script type="text/javascript" language="javascript">
+        var returnUri = @Html.GetObjectScript(ViewData["returnUri"]);
+
+        function DoSubmit() {
+            var param = {
+                UserName:Ext.get("UserName").getValue(),
+                Password:Ext.get("Password").getValue()
+            };
+
+            Ext.Ajax.request({
+               url: Ext.getUri('Admin', "LogOn"),
+               params:param,
+               success:function(response){
+                var re = Ext.decode(response.responseText);
+                if(re.success == 1) alert("登录成功");
+               }
+            });
+
+        }
+    </script>
+
+    <div>
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.UserName)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Password)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+            <div class="editor-label">
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+            </div>
+
+            <p>
+                <input type="button" value="Log On" onclick="DoSubmit()"/>
+            </p>
+        </fieldset>
+    </div>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.Script"
+                   assembly="ZxdFramework.Net.Script">
+    <class name="RubyTemplate" table="ZxdSys.base.System_RubyTemplate">
+        <id name="Id" type="Guid" column="PID">
+            <generator class="guid" />
+        </id>
+        <timestamp name="LastUpdate" column="Last_Update" />
+        <property name="UserId" column="Update_User" type="String" length="50" unique="true"/>
+
+        <property name="ScriptName" column="Script_Name" type="String" length="200" not-null="true"/>
+        <property name="AliasName" column="Alias_Name" type="String" length="200" />
+        <property name="ModuleName" column="Module_Name" type="String" length="250" />
+        <property name="IsAnalyze" column="Is_Analyze" />
+        <property name="Content" column="Content" type="StringClob" />
+
+        <list name="Requires" table="ZxdSys.base.System_RubyTemplate_Requires" cascade="save-update">
+            <key column="Template_Pid" />
+            <list-index column="Order_Index" />
+            <element type="String" column="Content" length="500" not-null="true" />
+        </list>
+
+        <list name="Footnode" table="ZxdSys.base.System_RubyTemplate_Footnode" cascade="save-update">
+            <key column="Template_Pid" />
+            <list-index column="Order_Index" />
+            <element type="String" column="Content" length="500" not-null="true" />
+        </list>
+
+        <set name="Roles" table="ZxdSys.base.System_RubyTemplate_Roles" cascade="save-update">
+            <key column="Template_Pid" />
+            <element column="RoleKey" type="String" length="50" not-null="true" />
+        </set>
+
+        <set name="Users" table="ZxdSys.base.System_RubyTemplate_Users" cascade="save-update">
+            <key column="Template_Pid" />
+            <element column="UserKey" type="String" length="50" not-null="true" />
+        </set>
+    </class>
+</hibernate-mapping>

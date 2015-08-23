@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   default-lazy="false"
+                   namespace="ZxdFramework.DataContract.IM"
+                   assembly="ZxdFramework.Net.DataContract">
+  <class name="IMUserSetting" table="ZxdSys.base.IM_UserSetting">
+    <!--<id name="Id" column="PID" type="Guid">
+      <generator class="guid" />
+    </id>-->
+    <composite-id>
+        <key-property name="Id" column="Pid" />
+        <key-many-to-one name="Group" class="IMUserGroup" column="Owner_Id"/>
+    </composite-id>
+    <timestamp name="UpdateTime" column="Last_Update"/>
+
+    <property name="State" column="User_State"/>
+    <property name="IsScriptSupport" column="IsScriptSupport" />
+    <property name="Signing" column="Signing" type="String" length="200"/>
+    <property name="Name" column="Show_Name" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "_ExtSupport";
+    Layout = "~/Views/Shared/_RootMaster.cshtml";
+}
+
+@section BodyHead {
+    <link rel="stylesheet" type="text/css" href="@Href("~/Scripts/resources/css/ext-all.css")" />
+    <link rel="stylesheet" type="text/css" href="@Href("~/Scripts/resources/css/ext-base.css")" />
+    
+
+    <script type="text/javascript" src="@Href("~/Scripts/adapter/ext/ext-base-debug.js")"></script>
+    <script type="text/javascript" src="@Href("~/Scripts/ext-all-debug.js")" ></script>
+    <script type="text/javascript" src="@Href("~/Scripts/ext-base.js")" ></script>
+    <script type="text/javascript" src="@Href("~/Ext.page/Config")" ></script>
+
+    @RenderSection("Head", false)
+    
+}
+@RenderBody()
